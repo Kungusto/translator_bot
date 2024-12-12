@@ -1,0 +1,20 @@
+languages_dict = {
+    'english': {'code': 'en', 'emoji': '🇬🇧'},
+    'russian': {'code': 'ru', 'emoji': '🇷🇺'},
+    'spanish': {'code': 'es', 'emoji': '🇪🇸'},
+    'french': {'code': 'fr', 'emoji': '🇫🇷'},
+    'german': {'code': 'de', 'emoji': '🇩🇪'},
+    'italian': {'code': 'it', 'emoji': '🇮🇹'},
+    'portuguese': {'code': 'pt', 'emoji': '🇵🇹'},
+    'japanese': {'code': 'ja', 'emoji': '🇯🇵'},
+    'chinese': {'code': 'zh', 'emoji': '🇨🇳'},
+    'arabic': {'code': 'ar', 'emoji': '🇸🇦'},
+    'hindi': {'code': 'hi', 'emoji': '🇮🇳'},
+    'korean': {'code': 'ko', 'emoji': '🇰🇷'},
+    'turkish': {'code': 'tr', 'emoji': '🇹🇷'},
+    'greek': {'code': 'el', 'emoji': '🇬🇷'},
+    'dutch': {'code': 'nl', 'emoji': '🇳🇱'},
+    'swedish': {'code': 'sv', 'emoji': '🇸🇪'},
+    'polish': {'code': 'pl', 'emoji': '🇵🇱'},
+    'ukrainian': {'code': 'uk', 'emoji': '🇺🇦'}
+}
