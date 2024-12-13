@@ -10,8 +10,6 @@ from .keyboards import languages
 
 from .languages import languages_dict
 
-import googletrans
-
 class Translation(StatesGroup) :
     language = State()
     text = State()
@@ -30,12 +28,20 @@ async def cmd_start(message: Message) :
 
 🌐 Поддерживаю множество языков, включая английский, русский, испанский и многие другие. Просто выберите нужный язык, а я сделаю всё остальное! 😉
 
+Для более подробной информации введите /help
+
 Нажмите кнопку ниже, чтобы начать перевод! 👇''', reply_markup=languages)
 
 @router.message(Command('help'))
 async def get_help(message: Message) :
-    await message.answer('Скоро тут появится документация')
+    await message.answer('/help - помощь\n/change_language - сменить язык')
     
+@router.message(Command('change_language'))
+async def ch_lg(message: Message) :
+    await message.answer('Выберите нужный вам язык', reply_markup=languages)
+    
+# Выбор языка    
+
 @router.callback_query(F.data == 'en')
 async def get_en(callback: CallbackQuery):
     global LANGUAGE
@@ -84,10 +90,10 @@ async def get_ja(callback: CallbackQuery):
     LANGUAGE = 'ja'
     await callback.message.answer('日本語を選択しました 🇯🇵')
 
-@router.callback_query(F.data == 'zh')
+@router.callback_query(F.data == 'zh-CN')
 async def get_zh(callback: CallbackQuery):
     global LANGUAGE
-    LANGUAGE = 'zh'
+    LANGUAGE = 'zh-CN'
     await callback.message.answer('您选择了中文 🇨🇳')
 
 @router.callback_query(F.data == 'ar')

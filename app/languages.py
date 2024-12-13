@@ -7,7 +7,7 @@ languages_dict = {
     'italian': {'code': 'it', 'emoji': '🇮🇹'},
     'portuguese': {'code': 'pt', 'emoji': '🇵🇹'},
     'japanese': {'code': 'ja', 'emoji': '🇯🇵'},
-    'chinese': {'code': 'zh', 'emoji': '🇨🇳'},
+    'chinese': {'code': 'zh-CN', 'emoji': '🇨🇳'},
     'arabic': {'code': 'ar', 'emoji': '🇸🇦'},
     'hindi': {'code': 'hi', 'emoji': '🇮🇳'},
     'korean': {'code': 'ko', 'emoji': '🇰🇷'},
